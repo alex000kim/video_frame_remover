@@ -1,6 +1,6 @@
+import cv2
 import imageio
 import numpy as np
-import cv2
 
 
 def auto_canny(image, sigma=0.3):
@@ -52,7 +52,6 @@ def get_stdev_frame(frames):
 
 
 def get_frame_box_coords(input_frame, sz=300, min_area_ratio=0.2, max_area_ratio=0.9, pad=5):
-
     ratio = input_frame.shape[0] / float(sz)
     input_frame_resized = resize_img(input_frame, height=sz)
     input_frame_resized = input_frame_resized.astype(np.uint8)
@@ -77,7 +76,7 @@ def get_frame_box_coords(input_frame, sz=300, min_area_ratio=0.2, max_area_ratio
             rect_coord_lst.append(np.array([x0, y0, w, h]))
 
     if len(area_lst) == 0:
-            return None
+        return None
     max_idx = np.array(area_lst).argmax()
     rect = rect_coord_lst[max_idx]
     x0, y0, width, height = (rect * ratio).astype(int)

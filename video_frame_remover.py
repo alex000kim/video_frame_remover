@@ -1,7 +1,9 @@
-import os
 import argparse
+import os
+
 from moviepy.editor import VideoFileClip
 from moviepy.video.fx.all import crop
+
 from utils import get_frames, get_median_frame, get_frame_box_coords
 
 
