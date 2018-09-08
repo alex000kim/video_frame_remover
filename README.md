@@ -8,6 +8,7 @@
 ### Installation:
 
 `conda create --name vfr --file spec-file.txt`
+
 `source activate vfr`
 
 ### Usage example:
