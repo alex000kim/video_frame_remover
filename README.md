@@ -1,15 +1,19 @@
 # Video Frame Remover
 ## Remove frames and borders around videos
 
-Installation:
+### Features:
+- Works with both static and dynamically moving borders
+- Preserves resolution
+
+### Installation:
 
 `conda create --name vfr --file spec-file.txt`
 
-Usage example:
+### Usage example:
 
 `python video_frame_remover.py -i test_videos/test_video_0.mp4 -o out/test_video_0_out.mp4`
 
-Example outputs:
+### Example outputs:
 
 | Input  |  Output |
 |---|---|
