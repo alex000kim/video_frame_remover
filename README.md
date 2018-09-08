@@ -8,10 +8,11 @@
 ### Installation:
 
 `conda create --name vfr --file spec-file.txt`
+`source activate vfr`
 
 ### Usage example:
 
-`python video_frame_remover.py -i test_videos/test_video_0.mp4 -o out/test_video_0_out.mp4`
+`(vfr)$ python video_frame_remover.py -i test_videos/test_video_0.mp4 -o out/test_video_0_out.mp4`
 
 ### Example outputs:
 
